@@ -1,0 +1,119 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+ margin-bottom: 20px;
+}
+.container {
+  height: auto;
+  width: 35vw;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(74, 74, 74);
+  background: #1a1a1a;
+  padding: 20px;
+}
+
+.checkboxes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.checkboxes>div>label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head>p {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+button {
+  padding: 5px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: cadetblue;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(2, 149, 154);
+}
+
+.generatePassword {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+.errorMsg {
+  color: rgb(255, 50, 50);
+}
+
+.lengthSelector {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.lengthSelector>input {
+  width: 70%;
+}
+
+.lengthSelector>span {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.strength {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.strength p{
+  font-weight: 600;
+}
+@media screen and (max-width:500px){
+      .container{
+        width: 100%;
+      }
+      body{
+        justify-content: start;
+        margin: 10px 20px;
+      }
+      h1{
+        margin-left: 20px;
+      }
+}
